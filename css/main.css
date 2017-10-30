@@ -1,0 +1,471 @@
+body{
+	background: rgb(243,243,243);
+}
+.jd-layout {
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+    background: rgb(243,243,243);
+   
+}
+/*搜索头部*/
+.jd-header {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+}
+/*内容盒子*/
+.jd-header .jd-headerBox {
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+    height: 40px;
+    background: rgba(201, 21, 35, 0.4);
+    line-height: 30px;
+    padding:6px 10px 4px 10px;
+}
+.jd-header .jd-headerBox .form{
+	width:94%;
+	border-radius: 15px;
+	padding-left: 10px;
+	background-color: #FAF6F6;
+}
+/*log图标*/
+.jd-header .jd-headerBox .icon-log {
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    background-position: 0 0;
+    vertical-align: middle;
+    
+}
+/*搜索图标*/
+.jd-header .jd-headerBox .icon-search {
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    background-position: -60px -110px ;
+   	vertical-align: middle;
+   	margin: 0 8px;
+   
+}
+/*搜索框*/
+.jd-header .jd-headerBox input {
+   background: none;
+}
+.jd-header .jd-headerBox .login{
+	float: right;
+	color:#FFFFFF;
+}
+
+/*轮播图*/
+
+.jd-banner .banner-container{
+	width:100%;
+	overflow: hidden;
+	position:relative;
+}
+.jd-banner .banner-container .banner-img{
+	width:800%;
+}
+.jd-banner .banner-container .banner-img li{
+	width:12.5%;
+	float: left;
+}
+.jd-banner .banner-container .banner-img li img{
+	width:100%;
+}
+/*轮播按钮*/
+.jd-banner .banner-container .banner-btn{
+	position: absolute;
+	left:50% ;
+	bottom:6%;
+	margin-left: -56px;
+}
+.jd-banner .banner-container .banner-btn li{
+	float:left;
+	width:6px;
+	height:6px;
+	border:solid 1px #FFFFFF;
+	margin:0 4px;
+	border-radius: 50%;
+}
+.jd-banner .banner-container .banner-btn .active{
+	background-color: #FFFFFF;
+}
+.floor img{
+	width:100%;
+}
+/*导航栏*/
+.jd-nav .nav-container{
+	margin-top: 0;
+	width:100%;
+	padding:0 20px;
+}
+.jd-nav .nav-container li {
+		width: 20%;
+		text-align: center;
+	    float: left;
+	    padding:15px 0px;
+	}
+
+.jd-nav .nav-container li img {
+	    display: block;
+	    margin: 0 auto;
+	}
+
+.jd-nav .nav-container li span {
+	   display: block;
+	   margin-top: 5px;
+
+	}
+@media screen and (max-width: 375px) {
+	.jd-nav .nav-container li img {  
+	    width: 29px;
+	    height: 29px;   
+	}
+}
+@media screen and (min-width: 375px) {
+	.jd-nav .nav-container li img {  
+	    width: 34px;
+	    height: 34px;   
+	}
+}
+@media screen and (min-width: 414px) {
+	.jd-nav .nav-container li img {  
+	    width: 38px;
+	    height: 38px;   
+	}
+}
+@media screen and (min-width: 640px) {
+	.jd-nav .nav-container li img {  
+	    width: 58px;
+	    height: 58px;   
+	}
+}
+.jd-nav .nav-container .pro img{
+	width:100%;
+}
+/*新闻区*/
+.news-contain{
+	padding:5px 10px;
+}
+.news{
+	padding-left: 10px;
+	line-height: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+.news span img{
+	width:73px;
+	height:16px;
+}
+.news .news-list{
+	overflow: hidden;
+	display:inline-block;
+	height:20px;
+}
+/*商品区*/
+.shop{
+	background-color: #FFFFFF;
+}
+.shop .shop-bar img{
+	width:69px;
+	height:27px;
+}
+/*秒杀区*/
+.shop .shop-list{
+	overflow: hidden;
+}
+.shop .shop-list ul{
+	width:200%;
+}
+.shop .shop-list ul li{
+	width:15%;
+	padding:10px;
+	float: left;
+}
+.shop .shop-list ul li img{
+ 	width:80%;
+	border-right: solid 1px #F3F3F3;
+}
+.shop .shop-list .new-price{
+	display: block;
+	width:30%;
+	margin:0 auto;
+}
+
+.shop .shop-list .old-price{
+	display: block;
+	width:30%;
+	margin:0 auto;
+	text-decoration:line-through;
+}
+/*秒杀区*/
+
+/*商品列表区*/
+.shop .shop-product .product-item{
+	width:50%;
+	float:left;
+	padding:5%;
+	border: solid 1px #f5f5f5;
+	border-bottom: none;
+}
+@media screen and (max-width:413px) {
+	.shop .shop-product .product-item strong{
+	font-size: 14px;
+	line-height: 20px;
+}
+	.shop .shop-product .product-item  span{
+	display: block;
+	font-size: 11px;
+	line-height: 15px;
+}
+}
+@media screen and (min-width:413px) {
+	.shop .shop-product .product-item  strong{
+	font-size: 16px;
+	line-height: 22px;
+}
+	.shop .shop-product .product-item  span{
+	display: block;
+	font-size: 11px;
+	line-height: 15px;
+}
+}
+@media screen and (min-width:559px) {
+	.shop .shop-product .product-item strong{
+	font-size: 18px;
+	line-height: 24px;
+}
+	.shop .shop-product .product-item  span{
+	display: block;
+	font-size: 14px;
+	line-height: 18px;
+}
+}
+@media screen and (min-width:640px) {
+	.shop .shop-product .product-item  strong{
+	font-size: 25px;
+	line-height: 34px;
+}
+	.shop .shop-product .product-item  span{
+	display: block;
+	font-size: 18px;
+	line-height: 30px;
+}
+}
+.shop .shop-product .product-item .product-intro{
+	float:left;
+	width:50%;
+}
+.shop .shop-product .product-item .product-img{
+	float: right;
+	width:50%;
+	margin:0 auto;
+}
+.shop .shop-product .product-item .product-img img{
+/*	width:138px;
+	height:138px;*/
+	width:100%;
+	/*height:100px;*/
+}
+.shop .shop-product .product-item .product-intro-left img{
+	width:100%;
+	
+}
+.shop .shop-product .product-item .product-img-right img{
+	width:100%;
+
+}
+.shop .shop-product .product-item .product-intro-left{
+	float: left;
+	width:50%;
+	border-right:solid 1px #f5f5f5; 
+	/*border:solid 1px red;*/
+}
+.shop .shop-product .product-item .product-img-right{
+	width:50%;
+	float:left;
+	padding-left: 10%;
+	/*border:solid 1px red*/;
+}
+/*为您推荐*/
+.recommend .recommend-title {
+	margin-top:20px;
+	text-align:center;
+	width:100%;
+}
+
+.recommend .recommend-title b{
+	display: inline-block;
+	height:1px;
+	border-bottom: solid 1px #d4d5d5;
+	width:40%;
+	vertical-align: middle;
+}
+@media screen and (max-width:400px ){
+	.recommend .recommend-title b{
+	width:35%;
+	
+}
+}
+.recommend .recommend-title span{
+	margin:10px;
+}
+.recommend .recommend-item{
+	width:50%;
+	background-color: #FFFFFF;
+	border:  solid 1px #f5f5f5;
+	float:left;
+	padding:10px;
+}
+.recommend .recommend-item img{
+	width:100%;
+}
+.recommend .recommend-item .price{
+	color:red;
+	font-size: 16px;
+	margin:10px 0;
+}
+.recommend .recommend-item .comment{
+	font-size: 10px;
+	color: #cbcbcb;
+	width:85%;
+	display: inline-block;
+}
+.recommend .recommend-item .semilar{
+	display: inline-block;
+	border:solid 1px #dfdfdf;
+}
+/*继续加载按钮*/
+.continue{
+	margin:20px 0;
+	width:100%;
+	text-align: center;
+}
+/*页面底部区域*/
+.jd-footer{
+	width:100%;
+}
+/*链接*/
+.jd-footer .footer-link{
+	padding:20px;
+	width:100%;
+	border-top: solid 1px #dbdbdb;
+	border-bottom: solid 1px #dbdbdb;
+}
+.jd-footer .footer-link ul{
+	
+	width:300px;
+	margin:0 auto;
+}
+.jd-footer .footer-link li{
+	text-align: center;
+	
+	width:25%;
+	float:left;
+	border-right: solid 1px #d7d7d7;
+	
+}
+.jd-footer .footer-link li a{
+	color:#848689;
+	font-size: 16px;
+}
+/*log*/
+
+.jd-footer .footer-log .footer-log-contain{
+	width:100%;
+	border-bottom: solid 1px #dbdbdb;
+}
+.jd-footer .footer-log .footer-log-contain ul{
+	width:250px;
+	margin:0 auto;
+}
+.jd-footer .footer-log .footer-log-contain ul li{
+	text-align: center;
+	width:33.33%;
+	float:left;
+}
+.jd-footer .footer-log .footer-log-contain .icon-computer,
+.jd-footer .footer-log .footer-log-contain .icon-touch,
+.jd-footer .footer-log .footer-log-contain .icon-client{
+	margin:0 auto;
+	display: block;
+	width:36px;
+	height:50px;
+}
+.jd-footer .footer-log .footer-log-contain .icon-client{
+	background-position: -119px -61px;
+}
+.jd-footer .footer-log .footer-log-contain .icon-touch{
+	background-position: -39px -60px;
+}
+.jd-footer .footer-log .footer-log-contain .icon-computer{
+	background-position: -80px -59px;
+}
+
+/*copyright*/
+.jd-footer .copyright{
+	text-align: center;
+	margin:10px;
+	height:60px;
+}
+
+	.bottom-bar{
+	background-color: #fff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	box-shadow: 0 0 10px 0 rgba(155,143,143,0.6);
+	width:100%;
+}
+.bottom-bar ul li{
+	margin:0 4%;
+	float: left;
+	width:12%;
+}
+.bottom-bar .classify img{
+	display:block;
+	width:100%;
+}
+.bottom-bar .big img{
+	width:80%;
+}
+@media screen and (min-width:640px){
+	.jd-footer .copyright{
+	height:120px;
+}
+.bottom-bar ul li{
+	margin:0 6.5%;
+	width:7%;
+}
+}
+@media screen and (max-width:640px) {
+	.jd-footer .copyright{
+	height:60px;
+}
+	.bottom-bar{
+	width:100%;
+}
+.bottom-bar ul li{
+	margin:0 4%;
+	width:12%;
+}
+}
+@media screen and (max-width:300px) {
+	.jd-footer .copyright{
+	height:60px;
+}
+	.bottom-bar{
+	width:300px;
+}
+.bottom-bar ul li{
+	margin:0 12px;
+	width:36px;
+}
+}
